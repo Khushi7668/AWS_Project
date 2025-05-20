@@ -1,0 +1,6 @@
+1. Create an S3 bucket and enable static website hosting.
+2. Upload the contents of the website folder to your S3 bucket.
+3. Set the bucket policy from bucket-policy.json to allow public read access.
+4. Create a CloudFront distribution pointing to your S3 bucket.
+5. Use AWS ACM to issue a public SSL certificate and attach it to CloudFront.
+6. Configure Route 53 with an A record pointing to the CloudFront distribution.
